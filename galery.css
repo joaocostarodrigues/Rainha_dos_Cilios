@@ -1,0 +1,19 @@
+.galeria {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-rows: repeat(1, 100px); /* 3 linhas com altura de 200px */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo das imagens */
+.galeria img {
+    object-fit: cover; /* Assegura que as imagens preencham a célula sem distorcer */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.galeria img:hover {
+    transform: scale(1.05);
+}

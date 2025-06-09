@@ -1,0 +1,233 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 100%; /* 1rem = 16px */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #420f1b;
+  z-index: 1000;
+  flex-wrap: wrap;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 7.5rem;
+  height: auto;
+}
+
+.click {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.click a {
+  color: #420f1b;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.click a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+/* Banner com imagem escalável */
+.banner {
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.produto-info h3 {
+  font-size: 1.5rem;
+  color: #420f1b;
+  margin-bottom: 0.625rem;
+}
+
+.produto-info p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #420f1bb6;
+  color: white;
+  border: none;
+  padding: 1.25rem;
+  font-size: 1.875rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #f39d126c;
+}
+
+/* Conteúdo */
+.fundo {
+  background-color: #420f1b;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  width: 90%;
+  max-width: 25rem;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.empresa {
+  padding: 4rem 2rem;
+  background-color: white;
+  max-width: 50rem;
+  margin: 2rem auto;
+  border-radius: 0.625rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #420f1b;
+}
+
+.empresa h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.empresa p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .click {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .click a {
+    margin: 0.625rem 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 0.625rem 0;
+  }
+
+  .album-container {
+    flex-direction: column;
+  }
+
+  .slide {
+    width: 100%;
+    margin: 0.625rem 0;
+  }
+
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .empresa h2 {
+    font-size: 1.5rem;
+  }
+
+  .empresa p {
+    font-size: 1rem;
+  }
+
+  .fio_button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
