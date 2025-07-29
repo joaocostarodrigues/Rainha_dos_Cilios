@@ -1,0 +1,47 @@
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.produto {
+  position: relative;
+  overflow: hidden;
+  width: clamp(300px, 50%, 30px); /* largura responsiva */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.produto :hover {
+  transition: all 0.3s ease;
+  position: relative;
+  transform: scale(1.05);
+  padding: 0.4rem;
+}
+
+
+
+/* Responsivo para tablets e celulares */
+@media (max-width: 768px) {
+  .produto {
+    width: calc(50% - 1rem); /* duas colunas */
+  }
+}
+
+@media (max-width: 480px) {
+  .produto {
+    width: 100%; /* empilha em telas bem pequenas */
+  }
+}

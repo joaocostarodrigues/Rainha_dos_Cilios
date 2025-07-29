@@ -514,15 +514,6 @@ body {
     height: 60px;
     width: 120px;
     font-weight: calc(2 * 180);
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 20px;
-    font-weight: bold;
-    border: 1px solid;
-    cursor: pointer;
-  }
-  .cta-fo{
-    text-decoration: none;
   }
 
   .text-content{
