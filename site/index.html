@@ -7,65 +7,27 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="produtos.css" />
   <link rel="stylesheet" href="degrade.css" />
+  <link rel="stylesheet" href="polish.css" />
+  <link rel="shortcut icon" type="icon" href="icons/logo-rainha.ico">
+  <script src="nav.js" defer></script>
 </head>
 <body>
   <header class="top-bar">
-    <div></div>
-    <div class="logo" >
-        <a href="../../index.html">
-        <img src="../../icons/rdc.png" alt="icon" class="rdc" >
-        </a>
-    </div>
-    <div class="text-header">
-          <div class="text-header-content">
-            <a href="#produtos" class="text-header-link">
-            <p>PRODUTOS</p>
-            </a>
-          </div>
-          <div class="text-header-doc">
-            <p>•</p>
-          </div>
-          <div class="text-header-content">
-            <a href="produtos/fios/fios.html" class="text-header-link">
-            <p>CÍLIOS</p>
-            </a>
-          </div>
-          <div class="text-header-doc">
-            <p>•</p>
-          </div>
-          <div class="text-header-content">
-            <a href="produtos/pincas/pincas.html" class="text-header-link">
-            <p>PINÇAS</p>
-            </a>
-          </div>
-          <div class="text-header-doc">
-            <p>•</p>
-          </div>
-          <div class="text-header-content">
-            <a href="produtos/colas/colas.html" class="text-header-link">
-            <p>COLAS</p>
-            </a>
-          </div>
-        </div>
-    <a href="https://wa.me/5548999632319?text=Ol%C3%A1%2C%20vim%20do%20site%20Rainha%20dos%20C%C3%ADlios%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20adquirir%20os%20produtos.">
-    <button class="cta-btn">ENTRE EM CONTATO</button >
-    </a>
-    <div></div>
+    <div class="logo"><a href="index.html" aria-label="Rainha dos Cílios, início"><img src="icons/rdc.png" alt="Rainha dos Cílios" class="rdc"></a></div>
+    <nav class="text-header" id="site-nav" aria-label="Categorias">
+      <a class="text-header-link" href="index.html#produtos">PRODUTOS</a><span aria-hidden="true">•</span>
+      <a class="text-header-link" href="produtos/fios/fios.html">CÍLIOS</a><span aria-hidden="true">•</span>
+      <a class="text-header-link" href="produtos/pincas/pincas.html">PINÇAS</a><span aria-hidden="true">•</span>
+      <a class="text-header-link" href="produtos/colas/colas.html">COLAS</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <a class="cta-btn header-contact" href="https://wa.me/5548999632319?text=Ol%C3%A1%2C%20vim%20do%20site%20Rainha%20dos%20C%C3%ADlios%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20adquirir%20os%20produtos."><span class="cta-desktop">ENTRE EM CONTATO</span><span class="cta-mobile">WhatsApp</span></a>
   </header>
 
   <!-- Banner principal -->
   
-  <section class="banner" alt="Banner principal" class="banner-img">
-    <a href="#produtos" >
-
-    
-    <div class="banner">
-
-  </section>
-  <a href=""></a>
-    <br>
-    <br>
-    <br>
+  <a class="banner" href="#produtos" aria-label="Conheça nossos produtos"></a>
+  <main>
     <section class="container">
     <div class="text-content">
       <p class="subtitle">CONHEÇA SOBRE</p>
@@ -86,11 +48,8 @@
       <img src="img/img_rst.png" alt="Imagem mulher com coroa" />
     </div>
   </section>
-  <br>
-  <br>
-  <br>
   <!-- Valores -->
-  <section class="valores">
+  <section class="valores" id="valores">
     <h4>NOSSOS VALORES</h4>
     <div class="honra">
     <h2>O Código de</h2>
@@ -100,38 +59,35 @@
       <div class="valor">
         <img src="icons/excelencia.png" alt="Excelencia" />
         <h3>Excelência Absoluta</h3>
-        <p>Nossos Produtos são desenvolvidos com tecnologia de ponta para garantir qulidade superior.</p>
+        <p>Nossos produtos são desenvolvidos com tecnologia de ponta para garantir qualidade superior.</p>
       </div>
       <div class="valor">
-        <img src="icons/inovação.png" alt="Inovação" />
+        <img src="icons/inovacao.png" alt="Inovação" />
         <h3>Inovação Contínua</h3>
         <p>Estamos sempre buscando novas fórmulas e soluções para elevar ainda mais o padrão do mercado.</p>
       </div>
       <div class="valor">
-        <img src="icons/força.png" alt="Força" />
+        <img src="icons/forca.png" alt="Força" />
         <h3>Força Empreendedora</h3>
         <p>Apoiamos as profissionais da beleza para que construam seus próprios impérios com confiança e segurança.</p>
       </div>
       <div class="valor">
-        <img src="icons/paixão.png" alt="Paixão" />
+        <img src="icons/paixao.png" alt="Paixão" />
         <h3>Paixão pela arte</h3>
-        <p>Sabemos que extensão vai além da tecnica, é uma arte que transforma olhares e aumenta a autoestima.</p>
+        <p>Sabemos que a extensão vai além da técnica: é uma arte que transforma olhares e aumenta a autoestima.</p>
       </div>
       <div class="valor">
         <img src="icons/compromisso.png" alt="Compromisso" />
         <h3>Compromisso com a Verdade</h3>
-        <p>Transparência e ética são nossos pilares respeitando cada profissionais que confia em nossa marca.</p>
+        <p>Transparência e ética são nossos pilares, respeitando cada profissional que confia em nossa marca.</p>
       </div>
     </div>
   </section>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="product-showcase">
   <div class="produtos-header">
       <h5>Nossos Produtos</h5>
+      <p class="swipe-hint">Deslize para explorar as categorias <span aria-hidden="true">→</span></p>
   </div>
   <section class="produtos" id="produtos">
   <div class="produto">
@@ -144,7 +100,7 @@
 
   <div class="produto">
     <a href="produtos/fios/fios.html">
-    <img src="categorias/categorias_fios.png" alt="F">
+    <img src="categorias/categorias_fios.png" alt="Fios para extensão de cílios">
     </a>
     <div class="info-produto">
     </div>
@@ -158,20 +114,12 @@
     </div>
   </div>
 </section>
+</div>
 
 <div class="fundo"></div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<div class="imagem-links">
+<div class="imagem-links" id="onde-encontrar">
     <a href="https://wa.me/5548999632319?text=Ol%C3%A1%2C%20gostaria%20de%20ser%20revendedor%20da%20Rainha%20dos%20C%C3%ADlios%2C%20poderia%20me%20passar%20mais%20informa%C3%A7%C3%B5es%20%3F">
       <img src="img/rev.png" alt="Revendedor">
     </a>
@@ -180,16 +128,7 @@
     </a>
   </div>
 
-</body>
-</html>
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
+</main>
 
 <div class="br-footer">
   <div class="reta"></div>
@@ -214,9 +153,9 @@
     <div class="footer-box">
       <h3>NAVEGUE</h3>
       <ul>
-        <li><a href="../../index.html">INÍCIO</a></li>
+        <li><a href="index.html">INÍCIO</a></li>
         <li><a href="#produtos">PRODUTOS</a></li>
-        <li><a href="guias/politica/politica.html">POlÍTICA</a></li>
+        <li><a href="guias/politica/politica.html">POLÍTICA</a></li>
         <li><a href="https://wa.me/5548999632319?text=Ol%C3%A1%2C%20vim%20do%20site%20Rainha%20dos%20C%C3%ADlios%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20adquirir%20os%20produtos.">CONTATO</a></li>
         <li><a href="map/map.html">ONDE ENCONTRAR</a></li>
       </ul>
@@ -246,7 +185,7 @@
 
     <!-- Redes Sociais -->
     <div class="footer-box">
-      <h3>FOLLOW US</h3>
+      <h3>REDES SOCIAIS</h3>
       <div class="social-icons">
         <a href="https://www.instagram.com/rainhadoscilios.oficial/" target="_blank">
           <img src="redes/instagram.png" alt="Instagram">

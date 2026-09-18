@@ -44,3 +44,11 @@ a:hover {
   font-style: italic;
   margin-bottom: 30px;
 }
+
+body { width: 100%; padding: 125px 24px 60px; }
+pre { max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; }
+section { max-width: 100%; }
+@media (max-width: 700px) {
+  body { padding: 135px 18px 50px; }
+  h1 { font-size: 1.75rem; }
+}
